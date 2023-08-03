@@ -1,0 +1,40 @@
+
+header {
+    padding: 25px 100px;
+    background-color: var(--colour-1);
+    display: flex;
+}
+
+header > span {
+    flex-grow: 2;
+}
+
+ul.nav-menu-cnt {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style-type: none;
+}
+
+ul.nav-menu-cnt li {
+    padding: 0 20px;
+    text-align: right;
+}
+
+li.dropdown-cnt {
+    position: relative;
+}
+
+li.dropdown-cnt > div.list-cnt {
+    background-color: yellow;
+    display: none;
+    position: absolute;
+    left: 0;
+}
+
+li.dropdown-cnt:hover > div.list-cnt {
+    display: flex;
+    flex-direction: column;
+}
