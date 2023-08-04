@@ -4,13 +4,6 @@ import "/src/styles/Text.css";
 import DropdownList from "/src/components/Dropdown-List.jsx";
 
 export default function Header() {
-    useEffect(() => {
-        const element = document.querySelector("div.list-cnt");
-        element.addEventListener("mouseleave", () => {
-            
-        })
-    }, []);
-
     return (
         <header>
             <span>
@@ -19,7 +12,7 @@ export default function Header() {
             <ul className="nav-menu-cnt ft-secondary color-primary">
                 <li className="dropdown-cnt">
                     <span>Work</span>
-                    <DropdownList ></DropdownList>
+                    <DropdownList></DropdownList>
                 </li>
                 <li><a href="">Bio</a></li>
                 <li><a href="">Contact</a></li>

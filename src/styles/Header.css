@@ -27,6 +27,18 @@ li.dropdown-cnt {
     position: relative;
 }
 
+div.list-cnt {
+    width: max-content;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    opacity: 1;
+    pointer-events: none;
+}
+
+/*
 li.dropdown-cnt > div.list-cnt {
     background-color: yellow;
     display: none;
@@ -37,4 +49,4 @@ li.dropdown-cnt > div.list-cnt {
 li.dropdown-cnt:hover > div.list-cnt {
     display: flex;
     flex-direction: column;
-}
+}*/

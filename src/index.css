@@ -1,6 +1,7 @@
 :root {
   --colour-1: rgb(230, 228, 221);
   --colour-2: rgb(7, 86, 242);
+  --colour-3: rgb(88, 92, 63);
 }
 
 html, body {
@@ -11,6 +12,16 @@ body {
   
 }
 
+p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
+  &:visited {
+    color: var(--colour-2);
+  }
+  &:hover {
+    color: var(--colour-3);
+  }
 }
