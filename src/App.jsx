@@ -1,17 +1,15 @@
 import './App.css'
 import Header from '/src/components/Header.jsx';
+import "/src/styles/Text.css";
+import Index from '/src/pages/Index.jsx';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <div id="home">
-        <p>
-          Tibby Haley <br /> Creative Director <br /> & Photographer
-        </p>
-      </div>
+      <Header />
+      <Index />
     </div>
   );
 }
 
-export default App
+export default App;
