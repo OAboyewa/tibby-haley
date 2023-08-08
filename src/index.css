@@ -6,10 +6,11 @@
 
 html, body {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
-  
+  background: var(--colour-1);
 }
 
 p {

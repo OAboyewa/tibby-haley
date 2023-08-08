@@ -21,6 +21,18 @@
     font-size: 36px;
 }
 
+.h4 {
+    font-size: 28px;
+}
+
+.p1 {
+    font-size: 18px;
+}
+
+.tx-align-cnt {
+    text-align: center;
+}
+
 .color-primary {
     color: var(--colour-2);
 }

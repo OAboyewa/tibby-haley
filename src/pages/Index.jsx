@@ -29,6 +29,24 @@ export default function Index() {
                 </div>
               </div>
             </div>
+            <div className="sub-hero">
+                <div className="sub-hero-bg"></div>
+                <div className="info-card">
+                    <span className="h2 ft-primary color-primary card-items">Welcome To My Playground</span>
+                    <span className="card-items">
+                      <span className="circle"></span>
+                    </span>
+                    <span className="h4 ft-primary color-primary card-items">I’m a creative director based in San Francisco. I work with clients across the globe, crafting unique visual concepts with a lasting impact.</span>
+                    <button className="btn btn-primary p1 ft-secondary card-items">More</button>
+                </div>
+            </div>
+            <div className="my-project">
+              <div className="project-title">
+                <p className="h2 ft-primary color-primary tx-align-cnt">
+                    My Projects
+                </p>
+              </div>
+            </div>
         </div>
       );
 }

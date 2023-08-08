@@ -5,13 +5,13 @@
 
 #home {
   min-height: 100vh;
-  background-color: var(--colour-1);
+  margin: 0 135px;
 }
 
 /*Hero*/
 
 div.hero {
-  margin: 0 135px;
+  margin: 130px 0;
   display: flex;
   align-items: center;
   position: relative;
@@ -171,4 +171,84 @@ div.flower-2-mask_off {
   & > img {
     width: 100%;
   }
+}
+
+/*info card*/
+
+div.sub-hero {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+div.sub-hero-bg {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 0% 37.008463541666664%, rgba(77,96,1,0.58) 0%, 19.8%, rgba(77,96,1,0) 66%), radial-gradient(circle at 92.96712239583333% 9.554036458333332%, #FAAA63 0%, 17.5%, rgba(250,170,99,0) 35%), radial-gradient(circle at 95.20670572916666% 90.48177083333333%, #C9C6FF 0%, 34.1%, rgba(201,198,255,0) 55%), radial-gradient(circle at 46.555989583333336% 11.50390625%, rgba(247,255,128,0.99) 0%, 25%, rgba(247,255,128,0) 50%), radial-gradient(circle at 49.391276041666664% 92.48697916666667%, #93AFFF 0%, 42%, rgba(147,175,255,0) 70%), radial-gradient(circle at 48.9013671875% 49.521484375%, #E6E4DD 0%, 100%, rgba(230,228,221,0) 100%);
+  opacity: 0;
+
+  animation-name: subHeroAni;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-timeline: scroll(block nearest);
+}
+
+
+@keyframes subHeroAni {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+div.info-card {
+  width: 900px;
+  height: 500px;
+  background: var(--colour-1);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.info-card > span > span.circle {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 100%;
+  background: rgba(247,255,128,0.99);
+}
+
+div.info-card span {
+  display: block;
+  text-align: center;
+}
+
+div.info-card > span:nth-child(3) {
+  padding: 0 172px;
+}
+
+div.info-card > .card-items {
+  margin-bottom: 20px;
+}
+
+div.info-card > button {
+  margin: 20px;
+}
+
+/* My Projects */
+
+.project-title {
+  padding: 60px 0;
 }
