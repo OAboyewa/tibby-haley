@@ -36,3 +36,11 @@
 .color-primary {
     color: var(--colour-2);
 }
+
+.color-secondary {
+    color: var(--colour-4);
+}
+
+.color-white {
+    color: white
+}

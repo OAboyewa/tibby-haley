@@ -5,13 +5,12 @@
 
 #home {
   min-height: 100vh;
-  margin: 0 135px;
 }
 
 /*Hero*/
 
 div.hero {
-  margin: 130px 0;
+  margin: 130px 135px;
   display: flex;
   align-items: center;
   position: relative;
@@ -176,8 +175,9 @@ div.flower-2-mask_off {
 /*info card*/
 
 div.sub-hero {
-  width: 100%;
   height: 900px;
+  margin: 0 135px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -189,32 +189,16 @@ div.sub-hero-bg {
   width: 100%;
   height: 100%;
   background: radial-gradient(circle at 0% 37.008463541666664%, rgba(77,96,1,0.58) 0%, 19.8%, rgba(77,96,1,0) 66%), radial-gradient(circle at 92.96712239583333% 9.554036458333332%, #FAAA63 0%, 17.5%, rgba(250,170,99,0) 35%), radial-gradient(circle at 95.20670572916666% 90.48177083333333%, #C9C6FF 0%, 34.1%, rgba(201,198,255,0) 55%), radial-gradient(circle at 46.555989583333336% 11.50390625%, rgba(247,255,128,0.99) 0%, 25%, rgba(247,255,128,0) 50%), radial-gradient(circle at 49.391276041666664% 92.48697916666667%, #93AFFF 0%, 42%, rgba(147,175,255,0) 70%), radial-gradient(circle at 48.9013671875% 49.521484375%, #E6E4DD 0%, 100%, rgba(230,228,221,0) 100%);
-  opacity: 0;
-
-  animation-name: subHeroAni;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-  animation-timeline: scroll(block nearest);
+  box-sizing: border-box;
+  opacity: 1;
 }
 
-
-@keyframes subHeroAni {
-  0% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 div.info-card {
   width: 900px;
   height: 500px;
   background: var(--colour-1);
+  box-sizing: border-box;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -251,4 +235,282 @@ div.info-card > button {
 
 .project-title {
   padding: 60px 0;
+}
+
+.project-content {
+  width: 100%;
+  height: 1000px;
+  background-color: var(--colour-3);
+  display: flex;
+  position: relative;
+}
+
+.project-content > div {
+  max-width: 50%;
+}
+
+.project-content > div:nth-child(1) {
+  width: 50%;
+}
+
+.project-parallax {
+  height: 100%;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*
+  background-image:
+    url("https://static.wixstatic.com/media/45d10e_5f001b282712449b808f44d927af9fc6~mv2.jpg/v1/fill/w_950,h_953,al_b,q_85,usm_0.66_1.00_0.01,enc_auto/45d10e_5f001b282712449b808f44d927af9fc6~mv2.jpg");
+  background-attachment: fixed;
+  background-position: top center;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size:  cover;*/
+  
+  & img {
+    clip-path: polygon(0% 10%,
+      10% 0%,
+      100% 0%,
+      100% 100%,
+      0% 100%);
+  }
+}
+
+.project-card {
+  width: 50%;
+  padding: 80px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card > span:nth-child(1) {
+  flex-grow: 2;
+  line-height: 50px;
+}
+
+.project-card > span:nth-child(2) {
+  width: 385px;
+}
+
+.project-card > span:nth-child(3) {
+  padding-top: 50px;
+
+  & > a {
+    color: var(--colour-4);
+    text-decoration: underline;
+  }
+
+  & > a::after {
+    content: " >>";
+  }
+}
+
+/* project-2 */
+
+.project-2 {
+  width: 100%;
+  height: 1300px;
+
+  background-image: url("https://static.wixstatic.com/media/11062b_540eb79aa87a4e09b665e6daf5843bfa~mv2.jpg");
+  background-position: center;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: 105%;
+}
+
+.overlay {
+  width: 100%;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.35);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.overlay > span:nth-child(1) {
+  padding-top: 120px;
+  padding-bottom: 60px;
+  line-height: 60px;
+}
+
+.overlay > span:nth-child(2) {
+  width: 565px;
+}
+
+.overlay > span:nth-child(3) {
+  padding-top: 20px;
+
+  & > a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+  }
+
+  & > a::after {
+    content: " >>";
+  }
+}
+
+/* project-3 */
+
+.project-3 {
+  width: 100%;
+  height: auto;
+  padding-top: 120px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.column {
+  max-width: 50%;
+  width: 50%;
+}
+
+.p3-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p3-left-bg {
+  position: relative;
+}
+
+.p3-left > .p3-left-cnt {
+  width: 350px;
+  height: 450px;
+  background-color: var(--colour-5);
+  position: absolute;
+}
+
+.p3-right {
+
+  & > img {
+    width: 100%;
+  }
+}
+
+.p3-left-cnt {
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.p3-left-cnt > span {
+  display: block;
+}
+
+.p3-left-cnt > span:nth-child(1) {
+  line-height: 50px;
+}
+
+.p3-left-cnt > span:nth-child(2) {
+  padding: 30px 10px 0;
+}
+
+.p3-left-cnt > span:nth-child(3) {
+  padding-top: 30px;
+
+  & > a {
+    text-decoration: underline;
+  }
+
+  & > a::after {
+    content: " >>";
+  }
+}
+
+/* project-4 */
+
+.project-4 {
+  width: 100%;
+  height: auto;
+  padding: 120px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.project-4-cnt {
+  width: 300px;
+  min-height: 450px;
+  padding: 40px 70px;
+  background-color: var(--colour-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+}
+
+.project-4-cnt > span {
+  display: block;
+}
+
+.project-4-cnt > span:nth-child(2) {
+  padding: 0 20px;
+  line-height: 50px;
+}
+
+.project-4-cnt> span:nth-child(3) {
+  padding-top: 50px;
+}
+
+.project-4-cnt > span:nth-child(4) {
+  padding-top: 30px;
+
+  & > a {
+    text-decoration: underline;
+  }
+
+  & > a::after {
+    content: " >>";
+  }
+}
+
+.project-4-cnt > span.circle {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 100%;
+  background: rgba(247,255,128,0.99);
+  position: absolute;
+  top: -25px;
+  left: 195px;
+}
+
+/* Creative Services */
+
+.creative-services {
+  height: 730px;
+  padding: 0 140px;
+  background: linear-gradient(var(--colour-1) 40%, rgba(247,255,128,0.99));
+  position: relative;
+}
+
+.creative-services p div {
+  padding: 10px 0;
+}
+
+.creative-services p div:nth-child(1) {
+  font-size: 42px;
+}
+
+.creative-services p div:nth-child(2) {
+  font-size: 120px;
+  line-height: 110px;
+}
+
+.creative-services > div {
+  position: absolute;
+  top: 65px;
+  left: 612px;
+}
+
+.creative-services > div > img {
+  border-radius: 100%;
 }
