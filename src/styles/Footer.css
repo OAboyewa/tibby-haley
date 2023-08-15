@@ -1,0 +1,125 @@
+
+footer {
+    padding: 0 200px 200px;
+    background: var(--colour-rg-1);
+    background-color: var(--colour-4);
+    display: flex;
+    justify-content: center;
+
+    & > div {
+        margin: 0 100px;
+    }
+}
+
+.ft-cnt-bg {
+    flex-grow: 3;
+}
+
+.ft-cnt-sm {
+    flex-grow: 1;
+}
+
+.content-cnt-1 {
+    & label, input {
+        width: 155px;
+        margin: 0 10px;
+        display: block;
+        box-sizing: border-box;
+    }
+    & input {
+        margin-bottom: 25px;
+    }
+}
+
+.content-cnt-2 > div {
+    display: inline-block;
+}
+
+.content-cnt-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.ft-contact-title {
+    margin: 0 10px 20px;
+}
+
+.ft-contact form {
+    width: 330px;
+    box-sizing: border-box;
+}
+
+.ft-contact form .textfield {
+    height: 40px;
+    background-color: transparent;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid var(--colour-2);
+    color: var(--colour-2);
+}
+
+.ft-contact form .textfield[type="email"] {
+    width: 100%;
+}
+
+.ft-contact form .textfield:hover {
+    border-bottom: 4px solid var(--colour-2);
+}
+
+.ft-contact form .textfield:focus-within {
+    outline: none;
+    background-color: var(--colour-4);
+    border-bottom: 2px solid var(--colour-2);
+}
+
+/*
+.ft-contact form .textfield:not(:empty){
+    outline: none;
+    background-color: var(--colour-4);
+    border: 2px solid red;
+}
+*/
+
+.ft-contact form .textarea {
+    width: 198px;
+    height: 80px;
+    background-color: transparent;
+    padding: 10px;
+    margin: 0 10px;
+    border: none;
+    border-bottom: 2px solid var(--colour-2);
+    resize: none;
+    color: var(--colour-2);
+    box-sizing: border-box;
+}
+
+.ft-contact form .textarea:hover {
+    border-bottom: 4px solid var(--colour-2);
+}
+
+.ft-contact form .textarea:focus-within {
+    outline: none;
+    background-color: var(--colour-4);
+    border-bottom: 2px solid var(--colour-2);
+}
+
+.ft-contact p {
+    padding-top: 100px;
+}
+
+.ft-contact p span {
+    display: block;
+}
+
+.ft-socials a, .ft-socials span {
+    display: block;
+}
+
+.ft-socials a  {
+    padding-bottom: 100px;
+}
+
+.ft-socials a:hover  {
+    color: var(--colour-2);
+}
