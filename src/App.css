@@ -7,6 +7,15 @@
   min-height: 100vh;
 }
 
+#home::after {
+  content: url("/src/assets/image.svg");
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transform: scale(0.7);
+}
+
 /*Hero*/
 
 div.hero {
