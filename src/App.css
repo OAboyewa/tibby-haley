@@ -199,7 +199,7 @@ div.sub-hero-bg {
   height: 100%;
   background: radial-gradient(circle at 0% 37.008463541666664%, rgba(77,96,1,0.58) 0%, 19.8%, rgba(77,96,1,0) 66%), radial-gradient(circle at 92.96712239583333% 9.554036458333332%, #FAAA63 0%, 17.5%, rgba(250,170,99,0) 35%), radial-gradient(circle at 95.20670572916666% 90.48177083333333%, #C9C6FF 0%, 34.1%, rgba(201,198,255,0) 55%), radial-gradient(circle at 46.555989583333336% 11.50390625%, rgba(247,255,128,0.99) 0%, 25%, rgba(247,255,128,0) 50%), radial-gradient(circle at 49.391276041666664% 92.48697916666667%, #93AFFF 0%, 42%, rgba(147,175,255,0) 70%), radial-gradient(circle at 48.9013671875% 49.521484375%, #E6E4DD 0%, 100%, rgba(230,228,221,0) 100%);
   box-sizing: border-box;
-  opacity: 1;
+  opacity: 0;
 }
 
 
@@ -269,14 +269,12 @@ div.info-card > button {
   display: flex;
   justify-content: center;
   align-items: center;
-/*
-  background-image:
-    url("https://static.wixstatic.com/media/45d10e_5f001b282712449b808f44d927af9fc6~mv2.jpg/v1/fill/w_950,h_953,al_b,q_85,usm_0.66_1.00_0.01,enc_auto/45d10e_5f001b282712449b808f44d927af9fc6~mv2.jpg");
-  background-attachment: fixed;
-  background-position: top center;
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  background-size:  cover;*/
+
+  position: relative;
+
+  & a {
+    position: absolute;
+  }
   
   & img {
     clip-path: polygon(0% 10%,
@@ -285,6 +283,19 @@ div.info-card > button {
       100% 100%,
       0% 100%);
   }
+}
+
+.p1-px-img {
+  width: 100%;
+  height: 100%;
+  
+  background-image: url("https://static.wixstatic.com/media/45d10e_5f001b282712449b808f44d927af9fc6~mv2.jpg/v1/fill/w_950,h_953,al_b,q_85,usm_0.66_1.00_0.01,enc_auto/45d10e_5f001b282712449b808f44d927af9fc6~mv2.jpg");
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 50%;
 }
 
 .project-card {
@@ -443,6 +454,19 @@ div.info-card > button {
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.p4-px-img {
+  width: 100%;
+  height: 100vh;
+  
+  background-image: url("https://static.wixstatic.com/media/c837a6_4a4f895c121848afad327ce95285005c~mv2.jpg/v1/fill/w_1903,h_1004,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_4a4f895c121848afad327ce95285005c~mv2.jpg");
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .project-4-cnt {
