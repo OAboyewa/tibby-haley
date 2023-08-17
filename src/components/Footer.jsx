@@ -4,7 +4,7 @@ export default function Footer() {
     return(
         <footer className="footer" id="footer">
             <div className="ft-cnt-bg"></div>
-            <div className="ft-contact ft-cnt-sm">
+            <div className="ft-contact ft-cnt-sm" id="contact">
                 <form action="">
                     <div className="ft-contact-title">
                         <span className="ft-primary h2 color-primary">Drop Me a Line</span>

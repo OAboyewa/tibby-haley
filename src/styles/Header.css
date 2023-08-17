@@ -12,6 +12,9 @@ header {
 
 header > span {
     flex-grow: 2;
+    & a:hover {
+        color: var(--colour-2);
+    }
 }
 
 ul.nav-menu-cnt {
@@ -34,13 +37,26 @@ li.dropdown-cnt {
 
 div.list-cnt {
     width: max-content;
-    padding: 0 20px;
+    padding: 20px 15px 5px;
+    background-color: var(--colour-1);
+
     display: flex;
     flex-direction: column;
+
     position: absolute;
     right: 0;
-    opacity: 1;
+    
+    opacity: 0;
     pointer-events: none;
+}
+
+li.dropdown-cnt:hover div.list-cnt, li.dropdown-cnt[data-content="active"] div.list-cnt {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+div.list-cnt > a {
+    padding-top: 10px;
 }
 
 /*
