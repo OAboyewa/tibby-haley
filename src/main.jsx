@@ -5,6 +5,7 @@ import './index.css'
 import App from './App'
 import Bio from './pages/Bio';
 import CitrusSeason from './pages/Citrus-Season';
+import RoomWithView from './pages/Room-With-View';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,19 @@ const router = createBrowserRouter([
   },
   {
     path: "/projects/citrus-season",
+    element: <CitrusSeason />
+  },
+  {
+    path: "/projects/room-with-view",
+    element: <RoomWithView />
+  }
+  ,
+  {
+    path: "/projects/true-romance",
+    element: <CitrusSeason />
+  },
+  {
+    path: "/projects/power-suit",
     element: <CitrusSeason />
   }
 ]);
