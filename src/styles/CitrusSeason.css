@@ -1,0 +1,93 @@
+.cs-stn-00 {
+    max-width: 100vw;
+    height: 85vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cs-stn-00 span {
+    margin: 10px auto;
+    display: block;
+}
+
+.cs-stn-00 span:nth-child(3) {
+    margin: 50px auto;
+}
+
+.cs-stn-00-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background: rgba(247,255,128,0.99);
+}
+
+.cs-stn-00 p:nth-child(2) {
+    padding: 0 605px;
+}
+
+.cs-stn-01 {
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--colour-6);
+    display: flex;
+}
+
+.cs-stn-01-c1 {
+    width: 50%;
+}
+
+.stn-01-img-c1 {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://static.wixstatic.com/media/45d10e_7925da9b75024c558b906a6320a61fcc~mv2.jpg/v1/fill/w_952,h_1039,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/45d10e_7925da9b75024c558b906a6320a61fcc~mv2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 50%;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.cs-stn-01-c2 {
+    width: 50%;
+    min-height: 100%;
+}
+
+.cs-stn-01 .stn-01-img-wrp {
+    padding: 150px;
+    & > img {
+        clip-path: polygon(0% 10%,
+            10% 0%,
+            100% 0%,
+            100% 100%,
+            0% 100%
+        );
+    }
+}
+
+.cs-stn-02 {
+    max-width: 100vw;
+    height: 100vh;
+    background-color: var(--colour-3);
+    margin: 130px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-border {
+    clip-path: polygon(0% 10%,
+      10% 0%,
+      100% 0%,
+      100% 100%,
+      0% 100%
+    );
+    & > img {
+        width: 90%;
+    }
+}
