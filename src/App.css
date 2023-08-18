@@ -519,7 +519,7 @@ div.info-card > button {
 /* Creative Services */
 
 .creative-services {
-  height: 730px;
+  height: 590px;
   padding: 0 140px;
   background: linear-gradient(var(--colour-1) 40%, rgba(247,255,128,0.99));
   position: relative;
