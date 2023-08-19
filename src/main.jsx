@@ -6,6 +6,7 @@ import App from './App'
 import Bio from './pages/Bio';
 import CitrusSeason from './pages/Citrus-Season';
 import RoomWithView from './pages/Room-With-View';
+import TrueRomance from './components/True-Romance';
 
 const router = createBrowserRouter([
   {
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
   ,
   {
     path: "/projects/true-romance",
-    element: <CitrusSeason />
+    element: <TrueRomance />
   },
   {
     path: "/projects/power-suit",

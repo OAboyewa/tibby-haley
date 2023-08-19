@@ -1,0 +1,166 @@
+.tr-stn-00 {
+    max-width: 100vw;
+    height: 85vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tr-stn-00 span {
+    margin: 10px auto;
+    display: block;
+}
+
+.tr-stn-00 span:nth-child(3) {
+    margin: 50px auto;
+}
+
+.tr-stn-00-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background: rgba(247,255,128,0.99);
+}
+
+.tr-stn-00 p:nth-child(2) {
+    padding: 0 605px;
+}
+
+.tr-stn-01 {
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--colour-5);
+    display: flex;
+}
+
+.tr-stn-01-c1 {
+    width: 50%;
+}
+
+.tr-stn-01-img-c1 {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://static.wixstatic.com/media/45d10e_88ed9eeed26244fcb4bb74e74c3c8997~mv2.jpg/v1/fill/w_952,h_1039,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/45d10e_88ed9eeed26244fcb4bb74e74c3c8997~mv2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 50%;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.tr-stn-01-c2 {
+    width: 50%;
+    min-height: 100%;
+}
+
+.tr-stn-01 .stn-01-img-wrp {
+    padding: 150px;
+    & > img {
+        clip-path: polygon(0% 10%,
+            10% 0%,
+            100% 0%,
+            100% 100%,
+            0% 100%
+        );
+    }
+}
+
+.tr-stn-02 {
+    max-width: 100vw;
+    height: 100vh;
+    margin: 100px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tr-stn-02 > img {
+    width: 100%;
+}
+
+.tr-img-border {
+    clip-path: polygon(0% 10%,
+      10% 0%,
+      100% 0%,
+      100% 100%,
+      0% 100%
+    );
+}
+
+.tr-stn-03  {
+    width: 100%;
+    height: 100%;
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tr-column-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tr-column-left > .tr-img-border {
+    width: 50%;
+}
+
+.tr-column-right {
+    width: 50%;
+    height: 100vh;
+}
+
+.tr-column-right > div {
+    height: 100%;
+    background-image: url("https://static.wixstatic.com/media/c837a6_7b57ed7c87d34374985c124542df6738~mv2.jpg/v1/fill/w_953,h_1039,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_7b57ed7c87d34374985c124542df6738~mv2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 50%;
+}
+
+/* project-4 */
+
+.tr-4 {
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+  
+.tr-px-img {
+    width: 100%;
+    height: 100vh;
+    
+    background-image: url("https://static.wixstatic.com/media/c837a6_86c9ef32205d4d3dabc390d701dc31f9~mv2.jpg/v1/fill/w_1681,h_957,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_86c9ef32205d4d3dabc390d701dc31f9~mv2.jpg");
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+  
+.tr-4-cnt {
+    width: 400px;
+    background-color: var(--colour-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    
+    & > img {
+        width: 100%;
+    }
+}
